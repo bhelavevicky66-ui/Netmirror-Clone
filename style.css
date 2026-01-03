@@ -10,7 +10,7 @@ body {
     cursor: all-scroll;
 }
 
-.contener {
+.container {
     background-image: url(image.html/Background-image.png);
     background-size: cover;
     background-position: center;
@@ -88,7 +88,7 @@ h2 {
     text-shadow: 2px 2px 6px gray;
 }
 
-.seson-4 {
+.season-4 {
     color: white;
     margin-left: 5.1875rem;
     font-size: 20px;

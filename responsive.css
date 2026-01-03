@@ -148,9 +148,32 @@
         font-size: 28px;
     }
 
+    /* Mobile Menu Logic (Checkbox Hack) */
     .nav-links {
         display: none;
-        /* Hide menu links on mobile */
+        /* Hidden by default */
+        position: absolute;
+        top: 100%;
+        /* Below navbar */
+        right: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.95);
+        /* Dark background */
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 20px 0;
+        z-index: 1000;
+        border-top: 1px solid red;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    /* Show menu when checkbox is checked */
+    #check:checked~.nav-links {
+        display: flex;
     }
 
     .icons {
@@ -161,13 +184,15 @@
     /* Centering Hero Content for Mobile */
     h1 {
         display: block;
-        margin: 80px auto 115px;
+        margin: 130px auto 30px;
+        /* Keep decent top margin for mobile */
         text-align: center;
         transform: none;
         font-size: 28px;
         width: 100%;
         padding: 0 10px;
     }
+
     h2 {
         margin: 0 auto;
         text-align: center;
@@ -182,7 +207,7 @@
         width: 100%;
     }
 
-    .seson-4 {
+    .season-4 {
         margin: 15px auto;
         text-align: center;
         white-space: normal;
@@ -190,7 +215,7 @@
         width: 90%;
     }
 
-    pre.seson-4 {
+    pre.season-4 {
         margin: 10px auto;
         text-align: center;
         white-space: normal;
@@ -204,7 +229,7 @@
 
     /* Force buttons container to flex column center */
     /* Note: The buttons are not in a specific div in html, so we target them via parent */
-    header#home nav.contener {
+    header#home nav.container {
         background-position: 60%;
         /* Shift bg slightly */
     }
