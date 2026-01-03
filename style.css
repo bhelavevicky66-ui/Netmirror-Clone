@@ -237,12 +237,21 @@ h4 {
 
 }
 
-#imge-1:hover {
-    height: 300px;
-    width: auto;
-    border-radius: 40px;
-    position: relative;
-    z-index: 1;
+/* General Image Styles & Interactions */
+.imagefalx img,
+.imagefalx-img img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+    border-radius: 4px;
+    /* Optional: smooth corners */
+}
+
+.imagefalx img:hover,
+.imagefalx-img img:hover {
+    transform: scale(1.1) translateY(-10px);
+    z-index: 2;
+    filter: brightness(1.2);
+    /* Make it slightly brighter */
 }
 
 .imagefalx-img {
