@@ -124,6 +124,7 @@ h2 {
     box-shadow: 2px 2px 3px gray;
     background-color: dimgrey;
     gap: 20px;
+    margin-left: 10px;
 }
 
 .info-icon {
