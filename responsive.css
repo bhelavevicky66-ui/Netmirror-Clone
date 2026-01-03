@@ -1,172 +1,340 @@
-
+/* Tablet and smaller desktops */
 @media screen and (max-width: 1024px) {
     .navbar {
-        padding: 10px 20px;
+        padding: 10px 30px;
     }
 
     .nav-links {
-        margin-right: 2rem;
+        margin-right: 1rem;
         gap: 15px;
     }
 
-    .logo {
-        font-size: 30px;
+    .nav-links a {
+        font-size: 18px;
+        /* Slightly smaller links to prevent wrapping */
     }
 
+    /* Hero Section Scaling - Center Align for iPad/Tablet for better look */
     h1 {
-        margin-left: 20px;
-        margin-top: 80px;
-        font-size: 30px;
+        display: block;
+        margin: 100px auto 10px;
+        /* Center with auto margins */
+        text-align: center;
+        width: 100%;
+        font-size: 32px;
+        transform: none;
+        /* Remove complex 3D transform which can cause layout issues on tablets */
     }
 
     h2 {
-        margin-left: 20px;
-        font-size: 50px;
-    }
-
-    #WITCHER {
-        margin-left: 20px;
+        display: block;
+        margin: 5px auto;
+        text-align: center;
+        width: 100%;
         font-size: 60px;
     }
 
-    .seson-4 {
-        margin-left: 20px;
-    }
-
-    .play-btn {
-        margin-left: 20px;
-    }
-
-    .box-2 {
-        width: 95%;
-        margin: 20px auto;
-        height: auto;
-        padding-bottom: 20px;
-    }
-
-    .imagefalx,
-    .imagefalx-img {
-        width: 100%;
-        overflow-x: auto;
-        justify-content: flex-start;
-        padding-left: 20px;
-        height: auto;
-        padding-bottom: 10px;
-    }
-
-    .imagefalx img,
-    .imagefalx-img img {
-        height: 20vh;
-        width: auto;
-    }
-
-    .box-3 {
-        width: 95%;
-        margin: 20px auto;
-        height: auto;
-        padding-bottom: 20px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .navbar {
-        flex-wrap: wrap;
-        height: auto;
-        background-color: rgb(33, 31, 31);
-    }
-
-    .icons {
-        gap: 15px;
-    }
-
-    .nav-links {
-        display: none;
-    }
-
- 
-
-    h1 {
-        margin-top: 100px;
-        font-size: 24px;
-        margin-left: 20px;
-    }
-
-    h2 {
-        font-size: 32px;
-        margin-left: 20px;
-    }
-
     #WITCHER {
-        font-size: 40px;
-        margin-left: 20px;
+        display: block;
+        margin: 5px auto;
+        text-align: center;
+        width: 100%;
+        font-size: 80px;
     }
 
-    .seson-4 {
-        margin-left: 20px;
-        white-space: normal;
-        /* Allow text wrapping */
-    }
-
+    .seson-4,
     pre.seson-4 {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 14px;
-        white-space: pre-wrap;
-    }
-
-    .play-btn,
-    .more-info {
-        width: 40%;
-        font-size: 16px;
-        margin-left: 10px;
-        margin-bottom: 10px;
-    }
-
-    .box-2 {
-        column-count: 1;
-        height: auto;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    h4 {
-        font-size: 28px;
-        margin-left: 10px;
-    }
-
-    #button-2 {
+        margin: 10px auto;
+        text-align: center;
         width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        height: auto;
-        padding: 10px;
+        font-size: 18px;
+        white-space: normal;
+        /* Better wrapping */
     }
 
-    #icon-icon {
-        font-size: 40px;
-        margin-top: 10px;
+    /* Flex buttons for Tablet to center them */
+    .play-btn {
+        display: flex;
+        /* Ensure flex to align icon and text */
+        justify-content: center;
+        /* Center content inside button */
+        margin: 20px auto 10px auto;
+        width: 200px;
+        /* Fixed nice width */
+    }
+
+    .more-info {
+        display: flex;
+        justify-content: center;
+        /* Center content inside button */
+        margin: 10px auto;
+        /* Center the button itself */
+        width: 200px;
+    }
+
+    /* We need to ensure buttons are centered. The HTML structure makes this tricky.
+       The buttons are inline-block or flex items. 
+       Best bet for existing HTML: ensure container aligns center if possible, 
+       but here we are forcing margins auto. 
+    */
+
+    /* Info Box - Fix Overflow by switching to Single Column on Tablet */
+    .box-2 {
+        width: 90%;
+        min-height: auto;
+        /* Reset fixed height */
+        height: auto !important;
+        /* Force auto height */
+        margin: 40px auto;
+        column-count: 1;
+        /* Single column stack */
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .box-2 h4,
+    .box-2 h5,
+    .box-2 p,
+    .box-2 pre {
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        white-space: normal;
+        /* Ensure text wraps */
     }
 
     .class-pre {
         margin-top: 20px;
-        margin-left: 10px;
-        font-size: 16px;
-        white-space: pre-wrap;
+        margin-left: 0;
+        text-align: center;
+        font-size: 18px;
     }
 
+    #button-2 {
+        margin: 20px auto;
+        justify-content: center;
+    }
+
+    /* Image Sliders */
+    .imagefalx,
+    .imagefalx-img {
+        width: 95%;
+        height: auto;
+        padding-bottom: 20px;
+        overflow-x: auto;
+        justify-content: flex-start;
+    }
+
+    .imagefalx img,
+    .imagefalx-img img {
+        height: 160px;
+        width: auto;
+        margin-right: 10px;
+    }
+}
+
+/* Mobile Devices (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 10px 20px;
+        justify-content: space-between;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .nav-links {
+        display: none;
+        /* Hide menu links on mobile */
+    }
+
+    .icons {
+        gap: 15px;
+        font-size: 18px;
+    }
+
+    /* Centering Hero Content for Mobile */
+    h1 {
+        display: block;
+        margin: 80px auto 115px;
+        text-align: center;
+        transform: none;
+        font-size: 28px;
+        width: 100%;
+        padding: 0 10px;
+    }
+    h2 {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 40px;
+        width: 100%;
+    }
+
+    #WITCHER {
+        margin: 5px auto;
+        text-align: center;
+        font-size: 50px;
+        width: 100%;
+    }
+
+    .seson-4 {
+        margin: 15px auto;
+        text-align: center;
+        white-space: normal;
+        display: block;
+        width: 90%;
+    }
+
+    pre.seson-4 {
+        margin: 10px auto;
+        text-align: center;
+        white-space: normal;
+        /* Force normal wrapping to ignore code indentation */
+        font-family: Arial, Helvetica, sans-serif;
+        /* Match other text */
+        font-size: 16px;
+        width: 90%;
+        line-height: 1.5;
+    }
+
+    /* Force buttons container to flex column center */
+    /* Note: The buttons are not in a specific div in html, so we target them via parent */
+    header#home nav.contener {
+        background-position: 60%;
+        /* Shift bg slightly */
+    }
+
+    /* We need a tricky way to align buttons since they are just in nav usually */
+    /* The HTML structure is a bit loose, buttons are inside nav > div at end */
+    .play-btn {
+        display: block;
+        margin: 20px auto 10px auto;
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .more-info {
+        display: flex;
+        /* Restore flex for icon alignment */
+        margin: 0 auto;
+        width: 80%;
+        max-width: 300px;
+    }
+
+    /* Info Box Redesign */
+    .box-2 {
+        column-count: 1;
+        /* Single column */
+        height: auto;
+        padding: 20px;
+        margin: 20px 10px;
+        width: auto;
+    }
+
+    h4 {
+        margin-left: 0;
+        text-align: center;
+        font-size: 28px;
+    }
+
+    #pre-propertii,
+    #pre-poperti {
+        margin-left: 0;
+        white-space: normal;
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    #boxmodel,
+    #boxmodel-1 {
+        display: block;
+        margin-left: 0;
+        text-align: center;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    #button-2 {
+        margin: 20px auto;
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+    }
+
+    .class-pre {
+        margin: 20px 0 0 0;
+        text-align: center;
+        white-space: pre-wrap;
+        font-size: 16px;
+    }
+
+    /* Sliders */
+    h5.name,
+    h5#movies,
+    h5#TVSeries {
+        margin-left: 10px;
+        font-size: 22px;
+        margin-top: 30px;
+    }
+
+    /* Footer */
     .box-3 {
         width: 95%;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 10px;
+        height: auto;
+        margin: 40px auto;
+        padding: 20px 10px;
+    }
+
+    .class-h6,
+    h6 {
+        margin-top: 15px;
+        font-size: 16px;
     }
 
     .box-4 {
         flex-direction: column;
-        gap: 20px;
+        gap: 15px;
+        margin-top: 20px;
     }
 
-    h5.name {
+    #button-3,
+    #button-4 {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .logo {
         font-size: 24px;
-        margin-left: 10px;
+    }
+
+    h1 {
+        margin-top: 80px;
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    #WITCHER {
+        font-size: 32px;
+    }
+
+    .imagefalx img,
+    .imagefalx-img img {
+        height: 120px;
     }
 }
