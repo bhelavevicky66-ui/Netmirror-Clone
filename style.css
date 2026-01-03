@@ -1,16 +1,16 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: rgb(33, 31, 31);
     overflow-x: hidden;
-    cursor:all-scroll;
+    cursor: all-scroll;
 }
 
-.contener{
+.contener {
     background-image: url(Background-image.png);
     background-size: cover;
     background-position: center;
@@ -19,49 +19,49 @@ body{
 }
 
 .navbar {
-  width: 100%;
-  height: 4rem;
-  position: fixed;
-  top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 60px;
-  background: transparent;
-  color: white;
+    width: 100%;
+    height: 4rem;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 60px;
+    background: transparent;
+    color: white;
 }
 
 .logo {
-  color: red;
-  font-size: 43px;
-  text-decoration: none;
-  letter-spacing: 2px;
+    color: red;
+    font-size: 43px;
+    text-decoration: none;
+    letter-spacing: 2px;
 }
 
 .nav-links {
-  display: flex;
-  gap: 30px;
-  list-style: none;
-  margin-right: 19rem;
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin-right: 19rem;
 }
 
 .nav-links a {
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
 }
 
 .icons {
-  display: flex;
-  gap: 40px;
-  font-size: 20px;
+    display: flex;
+    gap: 40px;
+    font-size: 20px;
 }
 
 #arrow {
-  transform: scaleY(-1);
+    transform: scaleY(-1);
 }
 
-h1{
+h1 {
     color: red;
     font-size: 37px;
     margin-left: 70px;
@@ -72,7 +72,7 @@ h1{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h2{
+h2 {
     color: gray;
     margin-left: 14.375rem;
     margin-top: 0.8125rem;
@@ -80,7 +80,7 @@ h2{
     text-shadow: 2px 2px 6px gray;
 }
 
-#WITCHER{
+#WITCHER {
     color: gray;
     margin-left: 83px;
     margin-top: 0.8125rem;
@@ -88,14 +88,14 @@ h2{
     text-shadow: 2px 2px 6px gray;
 }
 
-.seson-4{
+.seson-4 {
     color: white;
     margin-left: 5.1875rem;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.play-btn{
+.play-btn {
     color: black;
     margin-left: 83px;
     font-size: 20px;
@@ -111,7 +111,7 @@ h2{
     /* display: flex; */
 }
 
-.more-info{
+.more-info {
     color: white;
     font-size: 20px;
     height: 50px;
@@ -126,69 +126,68 @@ h2{
     gap: 20px;
 }
 
-.info-icon{
+.info-icon {
     font-size: 30px;
     font-weight: bolder;
 }
 
 /* div-2 */
 
-.box-2{
+.box-2 {
     border: 1px solid gray;
     height: 300px;
     background-color: gray;
-    margin-top: -0px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 20px auto;
+    width: 90%;
     border-radius: 9px;
     background: transparent;
     column-count: 2;
     column-rule-style: solid;
-    column-rule-color:red;
+    column-rule-color: red;
     box-shadow: 2px 3px 3px gray;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-h4{
+h4 {
     color: rgb(239, 18, 10);
     font-size: 44px;
     margin-left: 40px;
 }
 
-#pre-propertii{
+#pre-propertii {
     color: yellow;
     font-size: 20px;
     margin-left: 25px;
 }
 
-#pre-poperti{
+#pre-poperti {
     color: green;
     font-size: 20px;
     margin-left: 25px;
 }
 
-#paragrap{
+#paragrap {
     color: green;
     font-size: 25px;
 }
 
-.icon-2{
+.icon-2 {
     color: rgb(215, 27, 27);
     font-size: 20px;
 }
 
-#boxmodel-1{
+#boxmodel-1 {
     color: red;
     font-size: 29px;
 }
 
-#boxmodel{
+#boxmodel {
     color: yellow;
     font-size: 29px;
     margin-left: 38px;
 }
 
-#teligram{
+#teligram {
     color: white;
     font-size: 15px;
     text-align: center;
@@ -198,7 +197,7 @@ h4{
     cursor: pointer;
 }
 
-#button-2{
+#button-2 {
     background-color: rgb(55, 181, 203);
     height: 90px;
     width: 200px;
@@ -209,7 +208,7 @@ h4{
     cursor: pointer;
 }
 
-#icon-icon{
+#icon-icon {
     font-size: 60px;
     color: white;
     margin-left: 20px;
@@ -217,7 +216,7 @@ h4{
     justify-content: center;
 }
 
-.class-pre{
+.class-pre {
     color: green;
     margin-top: -110px;
     margin-left: 110px;
@@ -226,17 +225,19 @@ h4{
 
 /* image ka bhagh */
 
-.imagefalx{
+.imagefalx {
     display: flex;
     justify-content: space-around;
     height: 21.5vh;
-    width: 200px;
+    width: 90%;
+    margin: 0 auto;
     gap: 10px;
     animation: zoomSmooth 5s forwards ease-in-out;
-    cursor:grab;
+    cursor: grab;
 
 }
-  #imge-1:hover{
+
+#imge-1:hover {
     height: 300px;
     width: auto;
     border-radius: 40px;
@@ -244,30 +245,31 @@ h4{
     z-index: 1;
 }
 
-.imagefalx-img{
+.imagefalx-img {
     display: flex;
     justify-content: space-evenly;
     gap: 5px;
     height: 28.5vh;
-    width: 900px;
+    width: 90%;
+    margin: 0 auto;
 }
 
-h5{
+h5 {
     font-size: 33px;
     color: white;
-    margin-left: 20px;
+    margin-left: 5%;
 }
 
-#imge-1{
-    margin-left: 50px;
+#imge-1 {
+    margin-left: 0;
     margin-top: 2px;
 }
 
-.name{
+.name {
     margin-top: 45px;
     color: white;
     font-size: 28px;
-    margin-left: 47px;
+    margin-left: 5%;
     display: block;
 }
 
@@ -275,12 +277,11 @@ h5{
 
 /* footer */
 
-.box-3{
+.box-3 {
     border: 3px solid rgb(171, 215, 91);
     height: 300px;
-    width: 1200px;
-    margin-left: 155px;
-    margin-right: 20px;
+    width: 90%;
+    margin: 100px auto;
     margin-top: 100px;
     margin-bottom: 100px;
     border-radius: 20px;
@@ -288,19 +289,19 @@ h5{
     box-shadow: 3px 3px 4px pink;
 }
 
-.class-h6{
+.class-h6 {
     color: green;
     margin-top: 40px;
 }
 
-h6{
+h6 {
     color: rgba(250, 250, 8, 0.879);
     font-size: 20px;
     text-align: center;
     margin-top: 26px;
 }
 
-.box-4{
+.box-4 {
     margin-top: 40px;
     display: flex;
     justify-content: center;
@@ -308,36 +309,34 @@ h6{
     gap: 40px;
 }
 
-#button-3, #button-4{
-     height: auto;
+#button-3,
+#button-4 {
+    height: auto;
     width: 210px;
-     background: linear-gradient(rgb(229, 57, 111));
+    background: linear-gradient(rgb(229, 57, 111));
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-     padding: 10px;
+    padding: 10px;
     cursor: pointer;
-    
-    
+
+
 }
 
-.box-4 a{
+.box-4 a {
     text-decoration: none;
 }
-.downlod{
+
+.downlod {
     font-size: 10px;
     color: white;
-} 
+}
 
-#google-pay-2{
+#google-pay-2 {
     font-size: 27px;
-display: flex;
-align-items: center;
+    display: flex;
+    align-items: center;
     color: white;
     margin-top: 3px;
 }
-
-
-
-

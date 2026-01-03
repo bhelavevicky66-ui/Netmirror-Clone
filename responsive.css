@@ -1,0 +1,198 @@
+/* Responsive Design */
+
+/* Tablet and smaller laptops (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .nav-links {
+        margin-right: 2rem;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+
+    h1 {
+        margin-left: 20px;
+        margin-top: 80px;
+        font-size: 30px;
+    }
+
+    h2 {
+        margin-left: 20px;
+        font-size: 50px;
+    }
+
+    #WITCHER {
+        margin-left: 20px;
+        font-size: 60px;
+    }
+
+    .seson-4 {
+        margin-left: 20px;
+    }
+
+    .play-btn {
+        margin-left: 20px;
+    }
+
+    .box-2 {
+        width: 95%;
+        margin: 20px auto;
+        height: auto;
+        padding-bottom: 20px;
+        /* Keep columns if it fits, or switch to 1 */
+    }
+
+    .imagefalx,
+    .imagefalx-img {
+        width: 100%;
+        overflow-x: auto;
+        /* Enable horizontal scrolling */
+        justify-content: flex-start;
+        /* Align start so scrolling works */
+        padding-left: 20px;
+        height: auto;
+        /* Allow height to adjust */
+        padding-bottom: 10px;
+        /* Space for scrollbar */
+    }
+
+    .imagefalx img,
+    .imagefalx-img img {
+        height: 20vh;
+        /* Adjust image height */
+        width: auto;
+    }
+
+    .box-3 {
+        width: 95%;
+        margin: 20px auto;
+        height: auto;
+        padding-bottom: 20px;
+    }
+}
+
+/* Mobile Devices (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        /* Allow wrapping */
+        height: auto;
+        background-color: rgb(33, 31, 31);
+        /* Background needed when wrapped */
+    }
+
+    .icons {
+        gap: 15px;
+    }
+
+    .nav-links {
+        /* Hide nav links on mobile for now, or stack them */
+        display: none;
+    }
+
+    /* If you want a simple stacked menu without JS:
+    .nav-links {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0;
+        margin-right: 0;
+    }
+    */
+
+    h1 {
+        margin-top: 100px;
+        /* Push down below wrapped navbar */
+        font-size: 24px;
+        margin-left: 20px;
+    }
+
+    h2 {
+        font-size: 32px;
+        margin-left: 20px;
+    }
+
+    #WITCHER {
+        font-size: 40px;
+        margin-left: 20px;
+    }
+
+    .seson-4 {
+        margin-left: 20px;
+        white-space: normal;
+        /* Allow text wrapping */
+    }
+
+    pre.seson-4 {
+        font-family: Arial, Helvetica, sans-serif;
+        /* Match other text */
+        font-size: 14px;
+        white-space: pre-wrap;
+        /* Wrap long lines */
+    }
+
+    .play-btn,
+    .more-info {
+        width: 40%;
+        font-size: 16px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    .box-2 {
+        column-count: 1;
+        /* Single column for text */
+        height: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    h4 {
+        font-size: 28px;
+        margin-left: 10px;
+    }
+
+    #button-2 {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        padding: 10px;
+    }
+
+    #icon-icon {
+        font-size: 40px;
+        margin-top: 10px;
+    }
+
+    .class-pre {
+        margin-top: 20px;
+        margin-left: 10px;
+        font-size: 16px;
+        white-space: pre-wrap;
+    }
+
+    /* Footer stacking */
+    .box-3 {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+    }
+
+    .box-4 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    h5.name {
+        font-size: 24px;
+        margin-left: 10px;
+    }
+}
