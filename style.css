@@ -224,7 +224,6 @@ h4 {
     font-size: 24px;
 }
 
-/* image ka bhagh */
 
 .imagefalx {
     display: flex;
@@ -238,13 +237,11 @@ h4 {
 
 }
 
-/* General Image Styles & Interactions */
 .imagefalx img,
 .imagefalx-img img {
     transition: transform 0.3s ease, filter 0.3s ease;
     cursor: pointer;
     border-radius: 4px;
-    /* Optional: smooth corners */
 }
 
 .imagefalx img:hover,
@@ -252,7 +249,6 @@ h4 {
     transform: scale(1.1) translateY(-10px);
     z-index: 2;
     filter: brightness(1.2);
-    /* Make it slightly brighter */
 }
 
 .imagefalx-img {
@@ -283,9 +279,7 @@ h5 {
     display: block;
 }
 
-/* image-end */
 
-/* footer */
 
 .box-3 {
     border: 3px solid rgb(171, 215, 91);
