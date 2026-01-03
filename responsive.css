@@ -1,6 +1,4 @@
-/* Responsive Design */
 
-/* Tablet and smaller laptops (max-width: 1024px) */
 @media screen and (max-width: 1024px) {
     .navbar {
         padding: 10px 20px;
@@ -44,27 +42,21 @@
         margin: 20px auto;
         height: auto;
         padding-bottom: 20px;
-        /* Keep columns if it fits, or switch to 1 */
     }
 
     .imagefalx,
     .imagefalx-img {
         width: 100%;
         overflow-x: auto;
-        /* Enable horizontal scrolling */
         justify-content: flex-start;
-        /* Align start so scrolling works */
         padding-left: 20px;
         height: auto;
-        /* Allow height to adjust */
         padding-bottom: 10px;
-        /* Space for scrollbar */
     }
 
     .imagefalx img,
     .imagefalx-img img {
         height: 20vh;
-        /* Adjust image height */
         width: auto;
     }
 
@@ -76,14 +68,11 @@
     }
 }
 
-/* Mobile Devices (max-width: 768px) */
 @media screen and (max-width: 768px) {
     .navbar {
         flex-wrap: wrap;
-        /* Allow wrapping */
         height: auto;
         background-color: rgb(33, 31, 31);
-        /* Background needed when wrapped */
     }
 
     .icons {
@@ -91,24 +80,13 @@
     }
 
     .nav-links {
-        /* Hide nav links on mobile for now, or stack them */
         display: none;
     }
 
-    /* If you want a simple stacked menu without JS:
-    .nav-links {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 10px 0;
-        margin-right: 0;
-    }
-    */
+ 
 
     h1 {
         margin-top: 100px;
-        /* Push down below wrapped navbar */
         font-size: 24px;
         margin-left: 20px;
     }
@@ -131,10 +109,8 @@
 
     pre.seson-4 {
         font-family: Arial, Helvetica, sans-serif;
-        /* Match other text */
         font-size: 14px;
         white-space: pre-wrap;
-        /* Wrap long lines */
     }
 
     .play-btn,
@@ -147,7 +123,6 @@
 
     .box-2 {
         column-count: 1;
-        /* Single column for text */
         height: auto;
         margin-left: 10px;
         margin-right: 10px;
@@ -178,7 +153,6 @@
         white-space: pre-wrap;
     }
 
-    /* Footer stacking */
     .box-3 {
         width: 95%;
         margin-left: auto;
